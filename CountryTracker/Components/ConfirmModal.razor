@@ -1,0 +1,32 @@
+﻿<MudDialog>
+	<DialogContent>
+		@Message
+	</DialogContent>
+	<DialogActions>
+		<MudButton Color="Color.Secondary" OnClick="Close" Variant="Variant.Filled"><MudIcon Icon="fas fa-times me-2" />@ButtonLabelClose</MudButton>
+		<MudButton Color="Color.Primary" OnClick="SaveAndClose" Variant="Variant.Filled"><MudIcon Icon="fas fa-check me-2" />@ButtonLabelConfirm</MudButton>
+	</DialogActions>
+</MudDialog>
+
+@code {
+	#region Param
+	[Parameter] public string Message { get; set; } = string.Empty;
+	[Parameter] public string ButtonLabelConfirm { get; set; } = string.Empty;
+	[Parameter] public string ButtonLabelClose { get; set; } = string.Empty;
+	[CascadingParameter] private IMudDialogInstance _mudDialog { get; set; }
+	#endregion
+
+	#region Init
+	#endregion
+
+	#region Methods
+	private void SaveAndClose()
+	{
+		_mudDialog.Close(DialogResult.Ok(true));
+	}
+	private void Close()
+	{
+		_mudDialog.Close(DialogResult.Ok(false));
+	}
+	#endregion
+}

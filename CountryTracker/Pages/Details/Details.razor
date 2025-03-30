@@ -1,0 +1,217 @@
+﻿@inject GetAllTripsFeature _featureGetAllTrips
+@inject GetTripFeature _featureGetTrip
+@inject DeleteTripFeature _featureDeleteTrip
+@inject AddTripFeature _featureAddTrip
+@inject EditTripFeature _featureEditTrip
+@inject IDialogService DialogService
+@inject ICountriesApi ApiCountries
+@page "/details"
+
+<PageTitle>@($"{CountryTracker.Core.Constants.APP_NAME} - Details")</PageTitle>
+
+<h1>Details</h1>
+
+<MudDataGrid T="TripModel" MultiSelection="false" Items="@_trips.OrderByDescending(r=>r.Year)" SortMode="SortMode.Multiple"
+			 Filterable="true"
+			 QuickFilter="@FilterGrid"
+			 Hideable="true"
+			 Dense="true"
+			 Striped="true">
+	<ToolBarContent>
+		<MudTextField @bind-Value="_searchFilter" Placeholder="Quick search" Adornment="Adornment.Start" Immediate="true"
+					  AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+		<MudButton OnClick="@CreateNewTrip" Color="Color.Primary"><MudIcon Icon="fas fa-plus me-2" />@("New")</MudButton>
+	</ToolBarContent>
+	<Columns>
+		<PropertyColumn Property="item => item.CountryName" Title="Country" Sortable="true" Filterable="true">
+			<CellTemplate>
+				<MudElement Class="d-flex align-items-center">
+					<img class="img-fluid img-icon mx-2" src="@context.Item.CountryFlag" alt="flag" /> @context.Item.CountryName
+				</MudElement>
+			</CellTemplate>
+		</PropertyColumn>
+		<PropertyColumn Property="item => item.Year" Title="Year" Sortable="true" Filterable="true">
+			<CellTemplate>
+				@context.Item.Year.Year
+			</CellTemplate>
+		</PropertyColumn>
+		<PropertyColumn Property="item => item.Comment" Title="Comment" Sortable="false" Filterable="false" />
+		<PropertyColumn Property="item => item.Id" Title="" Sortable="false" Filterable="false" HeaderStyle="width: 10em;">
+			<CellTemplate>
+				<MudButton OnClick="@(()=>DeleteTrip(context.Item.Id))" Color="Color.Secondary"><MudIcon Icon="fas fa-trash" /></MudButton>
+				<MudButton OnClick="@(()=>EditTrip(context.Item.Id))" Color="Color.Primary"><MudIcon Icon="fas fa-edit" /></MudButton>
+			</CellTemplate>
+		</PropertyColumn>
+	</Columns>
+	<PagerContent>
+		<MudDataGridPager T="TripModel" />
+	</PagerContent>
+</MudDataGrid>
+
+<MudButton OnClick="@GenerateRandom" Color="Color.Primary"><MudIcon Icon="fas fa-dice me-2" />@("Generate Random")</MudButton>
+
+@code {
+	#region Param
+	private List<TripModel> _trips { get; set; } = new List<TripModel>();
+	private string _searchFilter { get; set; } = string.Empty;
+	private TripModel _tripToEdit { get; set; } = new TripModel();
+
+	private List<CountryTracker.Core.Models.Api.RestCountries.CountryModel>? _allCountriesForTestOnly { get; set; }
+	#endregion
+
+	#region Init
+	protected override void OnInitialized()
+	{
+		base.OnInitialized();
+		Task.Run(() => LoadTrips());
+	}
+	#endregion
+
+	#region Methods
+	/// <summary>
+	/// Load all trips from db
+	/// </summary>
+	private async Task LoadTrips()
+	{
+		_trips = _featureGetAllTrips.Execute();
+		await InvokeAsync(StateHasChanged);
+	}
+
+	/// <summary>
+	/// Create a new trip: open edit modal with empty model
+	/// </summary>
+	/// <param name="e"></param>
+	private async Task CreateNewTrip(MouseEventArgs e)
+	{
+		await OpenEditModal(new TripModel());
+	}
+
+	/// <summary>
+	/// Edit a trip: open edit modal with the selected trip model
+	/// </summary>
+	/// <param name="id"></param>
+	private async Task EditTrip(int id)
+	{
+		await OpenEditModal(_trips.FirstOrDefault(r => r.Id == id) ?? new TripModel());
+	}
+
+	/// <summary>
+	/// Delete a trip: open a confirm modal before deleting it
+	/// </summary>
+	/// <param name="id"></param>
+	private async void DeleteTrip(int id)
+	{
+		var trip = _trips.FirstOrDefault(r => r.Id == id) ?? new TripModel();
+		var options = new DialogOptions { CloseOnEscapeKey = true, MaxWidth = MaxWidth.ExtraSmall, FullWidth = true };
+
+		var parameters = new DialogParameters<ConfirmModal>
+		{
+			{ modal => modal.Message, $"Deleting trip to {trip.CountryName} ?" },
+			{ modal => modal.ButtonLabelConfirm, $"Yes" },
+			{ modal => modal.ButtonLabelClose, $"No" }
+		};
+		var confirmModel = await DialogService.ShowAsync<ConfirmModal>("Confirm", parameters, options);
+		var confirmResult = await confirmModel.Result;
+
+		if (confirmResult != null && !confirmResult.Canceled && (bool)confirmResult.Data && _featureDeleteTrip.Execute(trip.Id))
+		{
+			_trips.Remove(trip);
+			StateHasChanged();
+		}
+	}
+
+	/// <summary>
+	/// Open the edit modal
+	/// </summary>
+	/// <param name="tripToEdit"></param>
+	private async Task OpenEditModal(TripModel tripToEdit)
+	{
+		_tripToEdit.Id = tripToEdit.Id;
+		_tripToEdit.Year = tripToEdit.Year;
+		_tripToEdit.CountryName = tripToEdit.CountryName;
+		_tripToEdit.CountryFlag = tripToEdit.CountryFlag;
+		_tripToEdit.Comment = tripToEdit.Comment;
+
+		var options = new DialogOptions { CloseOnEscapeKey = true, MaxWidth = MaxWidth.Large, FullWidth = true };
+
+		var parameters = new DialogParameters<TripEditModal>
+		{
+			{ modal => modal.Trip, _tripToEdit }
+		};
+		var editModal = await DialogService.ShowAsync<TripEditModal>(tripToEdit.Id > 0 ? "Edit trip" : "New trip", parameters, options);
+		var editResult = await editModal.Result;
+
+		if (editResult != null && !editResult.Canceled && editResult.Data != null)
+		{
+			try
+			{
+				ValueTuple<TripModel, CountryTracker.Core.Models.Api.RestCountries.CountryModel> editData = (ValueTuple<TripModel, CountryTracker.Core.Models.Api.RestCountries.CountryModel>)editResult.Data;
+				int result = 0;
+				if (editData.Item1.Id > 0)
+				{
+					result = _featureEditTrip.Execute(editData.Item1);
+				}
+				else
+				{
+					result = _featureAddTrip.Execute(editData.Item2, editData.Item1.Year, editData.Item1.Comment);
+				}
+
+				if (result > 0)
+				{
+					_trips.RemoveAll(r => r.Id == editData.Item1.Id);
+					_trips.Add(_featureGetTrip.Execute(result));
+					StateHasChanged();
+				}
+			}
+			catch (Exception)
+			{
+			}
+		}
+	}
+
+	/// <summary>
+	/// Grid filtering
+	/// </summary>
+	/// <param name="item"></param>
+	/// <returns></returns>
+	private bool FilterGrid(TripModel item)
+	{
+		if (string.IsNullOrWhiteSpace(_searchFilter))
+			return true;
+
+		if (item.Comment.Contains(_searchFilter, StringComparison.OrdinalIgnoreCase))
+			return true;
+
+		if (item.CountryName.Contains(_searchFilter, StringComparison.OrdinalIgnoreCase))
+			return true;
+
+		return false;
+	}
+
+	private async Task GenerateRandom(MouseEventArgs e)
+	{
+		if (_allCountriesForTestOnly == null){
+			_allCountriesForTestOnly = await ApiCountries.GetAll();
+		}
+		Random random = new Random();
+		int randomIndex = random.Next(0, _allCountriesForTestOnly.Count);
+		var selectedCountry = _allCountriesForTestOnly.Skip(randomIndex).Take(1).Single();
+
+		int randomDays = random.Next(0, 4000);
+		TripModel randomTrip = new TripModel()
+			{
+				CountryName = selectedCountry.Name.Common,
+				CountryFlag = selectedCountry.Flags.Png,
+				Year = DateTime.Today.AddDays(randomDays * -1),
+				Comment = Guid.NewGuid().ToString()
+			};
+
+		int result = _featureAddTrip.Execute(selectedCountry, randomTrip.Year, randomTrip.Comment);
+		if (result > 0)
+		{
+			_trips.Add(_featureGetTrip.Execute(result));
+			StateHasChanged();
+		}
+	}
+	#endregion
+}

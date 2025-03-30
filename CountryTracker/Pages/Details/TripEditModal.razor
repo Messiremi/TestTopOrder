@@ -1,0 +1,149 @@
+﻿@inject ICountriesApi ApiCountries
+
+<MudDialog>
+	<DialogContent>
+		<MudForm @ref="_form">
+			<MudText>@("Country")</MudText>
+			@if(Trip.Id > 0)
+			{
+				<MudElement Class="d-flex align-items-center">
+					<img class="img-fluid img-icon mx-2" src="@Trip.CountryFlag" alt="flag" /> @Trip.CountryName
+				</MudElement>
+			}
+			else{
+			<MudAutocomplete T="string"
+							 Value=@Trip.CountryName
+							 ValueChanged="SetCountry"
+							 MinCharacters="2"
+							 Placeholder="Start typing country name"
+							 SearchFunc="SearchCountriesAsync" />
+			<MudText Class="mud-error-text">@(Trip != null && _selectedCountry != null && !string.IsNullOrEmpty(Trip.CountryName) && Trip.CountryName == _selectedCountry.Name.Common ? "" : "select country")</MudText>
+				}
+
+			<MudText Class="mt-2">@("Date")</MudText>
+			<MudDatePicker
+			DateFormat="yyyy-MM-dd"
+			Editable="true"
+			Date="Trip.Year"
+			DateChanged="@(d=>{ if(d.HasValue){Trip.Year = d.Value;}})"
+			Placeholder="Select Date" />
+			<MudText Class="mud-error-text">@((Trip != null && Trip.Year.Year > DateTime.Today.Year - 100) ? "" : "select valid date")</MudText>
+
+			<MudText Class="mt-2">@("Comment")</MudText>
+			<MudTextField T="string"
+				Lines="5" 
+				@bind-Value=@Trip.Comment
+				Placeholder="Describe your trip" />
+
+			@foreach (string error in _validationMessages)
+			{
+				<MudText Class="mud-error-text mt-3">@error</MudText>
+			}
+		</MudForm>
+	</DialogContent>
+	<DialogActions>
+		<MudButton Color="Color.Secondary" OnClick="Close" Variant="Variant.Filled"><MudIcon Icon="fas fa-times me-2" />Cancel</MudButton>
+		<MudButton Color="Color.Primary" OnClick="SaveAndClose" Variant="Variant.Filled"><MudIcon Icon="fas fa-check me-2" />Save</MudButton>
+	</DialogActions>
+</MudDialog>
+
+@code {
+	#region Param
+	[Parameter] public TripModel Trip { get; set; } = new TripModel();
+	[CascadingParameter] private IMudDialogInstance _mudDialog { get; set; }
+	private MudForm _form;
+	private bool _apiCall;
+	private List<CountryTracker.Core.Models.Api.RestCountries.CountryModel> _apiResult = new List<Core.Models.Api.RestCountries.CountryModel>();
+	private CountryTracker.Core.Models.Api.RestCountries.CountryModel? _selectedCountry = null;
+	List<string> _validationMessages { get; set; } = new List<string>();
+	#endregion
+
+	#region Init
+	protected override void OnInitialized()
+	{
+		base.OnInitialized();
+	}
+	protected override void OnParametersSet()
+	{
+		base.OnParametersSet();
+		_validationMessages.Clear();
+	}
+	#endregion
+
+	#region Methods
+	/// <summary>
+	/// Validate data and send data back to be saved
+	/// </summary>
+	private void SaveAndClose()
+	{
+		if (Validate())
+		{
+			_mudDialog.Close(DialogResult.Ok((Trip, _selectedCountry)));
+		}
+	}
+
+	/// <summary>
+	/// Close without changes
+	/// </summary>
+	private void Close()
+	{
+		_mudDialog.Cancel();
+	}
+
+	/// <summary>
+	/// Manual validation of the model
+	/// </summary>
+	/// <returns></returns>
+	private bool Validate()
+	{
+		_validationMessages.Clear();
+		if (Trip == null)
+		{
+			_validationMessages.Add("Invalid trip edition");
+			return false;
+		}
+
+		if (string.IsNullOrEmpty(Trip.CountryName) ||
+			(Trip.Id == 0 && (_selectedCountry == null || Trip.CountryName != _selectedCountry.Name.Common)))
+	{
+			_validationMessages.Add("Select a valid country");
+		}
+
+		if(Trip.Year.Year < DateTime.Today.Year - 100)
+		{
+			_validationMessages.Add("select a valid year");
+		}
+
+		return !_validationMessages.Any();
+	}
+
+	/// <summary>
+	/// Fetch countries
+	/// </summary>
+	/// <returns></returns>
+	private async Task<IEnumerable<string>> SearchCountriesAsync(string value, CancellationToken token)
+	{
+		if (!_apiCall)
+		{
+			_apiCall = true;
+			_apiResult = await ApiCountries.Search(value);
+			_apiCall = false;
+		}
+		return _apiResult.Select(r => r.Name.Common).OrderBy(r => r).ToList();
+	}
+
+	/// <summary>
+	/// When selecing a value in the autocomplete, select country
+	/// </summary>
+	/// <param name="value"></param>
+	private void SetCountry(string value)
+	{
+		_selectedCountry = _apiResult.FirstOrDefault(r => r.Name.Common == value);
+		if (_selectedCountry != null)
+		{
+			Trip.CountryName = value;
+			StateHasChanged();
+		}
+	}
+	#endregion
+}

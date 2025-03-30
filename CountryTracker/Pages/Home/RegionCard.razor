@@ -1,0 +1,46 @@
+﻿@inject IWebHostEnvironment Env
+<MudItem lg="4" sm="6" xs="12">
+	<MudCard>
+		<MudCardHeader>
+			<MudText>
+				@if (string.IsNullOrEmpty(Name))
+				{
+					<p>&nbsp;</p>
+				}
+				else
+				{
+					@Name
+				}
+			</MudText>
+		</MudCardHeader>
+		<MudCardContent Style="@($"background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.3)), url('{GetImageOrDefault(Name)}');")">
+			<MudText>@Count</MudText>
+		</MudCardContent>
+		<MudCardActions>
+			<MudButton Variant="Variant.Text" Color="Color.Primary" @onclick=@(()=>RegionSelected.InvokeAsync(Name))>Discover</MudButton>
+		</MudCardActions>
+	</MudCard>
+</MudItem>
+
+@code {
+	[Parameter] public string Name { get; set; }
+	[Parameter] public int Count { get; set; }
+	[Parameter] public EventCallback<string> RegionSelected { get; set; }
+
+	/// <summary>
+	/// from a given region get image
+	/// </summary>
+	/// <param name="region"></param>
+	/// <returns></returns>
+	private string GetImageOrDefault(string region)
+	{
+		string webRootPath = Env.WebRootPath;
+		string imageName = region.ToLower().Replace(" ", "-") + ".jpeg";
+		string fullPath = Path.Combine(webRootPath, "img", imageName);
+		if (File.Exists(fullPath))
+		{
+			return "img/" + imageName;
+		}
+		return "img/default.jpeg";
+	}
+}

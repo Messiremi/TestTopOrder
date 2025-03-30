@@ -1,0 +1,54 @@
+﻿@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<MudLayout>
+	<MudPaper Class="header">
+		<MudPaper Class="header-title" Elevation="0">
+			<MudPaper Class="header-title-logo cursor-pointer" @onclick=NavigateHome Elevation="0">
+				<span class="fa-stack fa-2x">
+					<i class="fas fa-globe fa-stack-2x icon-earth"></i>
+					<i class="fas fa-plane fa-stack-1x icon-plane"></i>
+				</span>
+			</MudPaper>
+			<MudText Class="header-title-text">
+				@("Country")<br />@("Tracker")
+			</MudText>
+		</MudPaper>
+		<MudPaper Class="header-navigation" Elevation="0">
+			<MudNavMenu>
+				<MudNavLink Href="/" Match="NavLinkMatch.All">
+					@("Home")
+				</MudNavLink>
+				<MudNavLink Href="/details">
+					@("Details")
+				</MudNavLink>
+			</MudNavMenu>
+		</MudPaper>
+	</MudPaper>
+
+	<MudMainContent>
+		<MudContainer MaxWidth="MaxWidth.False">
+			@Body
+		</MudContainer>
+	</MudMainContent>
+
+	<MudPaper Class="footer" Elevation="0">
+		@("Country Tracker - Technical test by Remi Messire for TopOrder - 2025/03")
+	</MudPaper>
+</MudLayout>
+
+@* Required *@
+<MudThemeProvider />
+<MudPopoverProvider />
+
+@* Needed for dialogs *@
+<MudDialogProvider />
+
+@* Needed for snackbars *@
+<MudSnackbarProvider />
+
+@code{
+	private void NavigateHome(MouseEventArgs e){
+		NavigationManager.NavigateTo("/");
+	}
+}

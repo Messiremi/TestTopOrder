@@ -1,0 +1,97 @@
+﻿@inject GetTrackedCountriesFeature _featureGetCountries
+@inject NavigationManager NavigationManager
+@page "/"
+
+<PageTitle>@($"{CountryTracker.Core.Constants.APP_NAME} - Home")</PageTitle>
+
+<h1>My country tracker</h1>
+
+@if (_loaded)
+{
+	if (!_countries.Any())
+	{
+		<MudPaper>@("No countries registered yet")</MudPaper>
+		<MudPaper><MudButton OnClick="@(()=>NavigationManager.NavigateTo("/details"))" Color="Color.Primary"><MudIcon Icon="fas fa-rocket me-2" />@("Start")</MudButton></MudPaper>
+	}
+	// global mod: display regions\
+	else if (string.IsNullOrEmpty(_selectedRegion))
+	{
+		<h2>My regions</h2>
+		<MudGrid Spacing="3">
+			<MudItem lg="10" md="9" xs="8">
+				<MudGrid Spacing="6">
+					@foreach (var region in _countriesPerRegion)
+					{
+						<RegionCard Name="@region.Name" Count="@region.Count" RegionSelected="@((s)=>_selectedRegion = s)" />
+					}
+				</MudGrid>
+			</MudItem>
+			<MudItem lg="2" md="3" xs="4">
+				<MudChart ChartType="ChartType.Pie"
+						  InputData="@_statsRegionsCount"
+						  InputLabels="@_statsRegionsLabels" Width="100%" />
+			</MudItem>
+		</MudGrid>
+	}
+	// per region mod: display countries in the selected region
+	else
+	{
+		<h2>@_selectedRegion</h2>
+		<MudButton Class="mb-2" OnClick="@(()=>_selectedRegion = string.Empty)" Color="Color.Primary"><MudIcon Icon="fas fa-arrow-left me-2" />@("Back to regions")</MudButton>
+		<MudGrid Spacing="3">
+			<MudItem lg="10" md="9" xs="8">
+				<MudGrid Spacing="6">
+					@foreach (var country in _countries.Where(r => r.Region == _selectedRegion).OrderBy(r => r.Name).ToList())
+					{
+						<CountryCard Name="@country.Name" Count="@country.TripsCount" Flag="@country.Flag" />
+					}
+				</MudGrid>
+			</MudItem>
+			<MudItem lg="2" md="3" xs="4">
+				<MudChart ChartType="ChartType.Pie"
+						  InputData="@_statsCountryCount"
+						  InputLabels="@_statsCountryLabels" Width="100%" />
+			</MudItem>
+		</MudGrid>
+	}
+}
+else
+{
+	<MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+}
+
+@code {
+	#region Param
+	private List<CountryModel> _countries { get; set; } = new List<CountryModel>();
+	private List<(string Name, int Count)> _countriesPerRegion { get; set; } = new();
+	private string _searchFilter { get; set; } = string.Empty;
+	private bool _loaded { get; set; } = false;
+	private string _selectedRegion = string.Empty;
+
+	private double[] _statsRegionsCount => _countriesPerRegion.OrderBy(r => r.Name).Select(r => (double)r.Count).ToArray();
+	private string[] _statsRegionsLabels => _countriesPerRegion.OrderBy(r => r.Name).Select(r => r.Name).ToArray();
+	private double[] _statsCountryCount => _countries.Where(r => r.Region == _selectedRegion).OrderBy(r => r.Name).Select(r => (double)r.TripsCount).ToArray();
+	private string[] _statsCountryLabels => _countries.Where(r => r.Region == _selectedRegion).OrderBy(r => r.Name).Select(r => r.Name).ToArray();
+	#endregion
+
+	#region Init
+	protected override void OnInitialized()
+	{
+		base.OnInitialized();
+		Task.Run(() => LoadCountries());
+	}
+	#endregion
+
+	#region Methods
+	/// <summary>
+	/// Load all countries from db
+	/// </summary>
+	private async Task LoadCountries()
+	{
+		_countries = _featureGetCountries.Execute();
+		_countriesPerRegion = _countries.GroupBy(r => r.Region).Select(r => (r.Key, r.Sum(x => x.TripsCount))).ToList();
+		_loaded = true;
+		await InvokeAsync(StateHasChanged);
+	}
+	#endregion
+}

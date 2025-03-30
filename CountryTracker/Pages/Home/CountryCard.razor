@@ -1,0 +1,29 @@
+﻿@inject NavigationManager NavigationManager
+<MudItem lg="4" sm="6" xs="12">
+	<MudCard>
+		<MudCardHeader>
+			<MudText>
+				@if (string.IsNullOrEmpty(Name))
+				{
+					<p>&nbsp;</p>
+				}
+				else
+				{
+					@Name
+				}
+			</MudText>
+		</MudCardHeader>
+		<MudCardContent Style="@($"background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0.3)), url('{Flag}');")">
+			<MudText>@Count</MudText>
+		</MudCardContent>
+		<MudCardActions>
+			<MudButton Variant="Variant.Text" Color="Color.Primary" @onclick=@(()=>NavigationManager.NavigateTo("/details"))>Details</MudButton>
+		</MudCardActions>
+	</MudCard>
+</MudItem>
+
+@code {
+	[Parameter] public string Name { get; set; }
+	[Parameter] public int Count { get; set; }
+	[Parameter] public string Flag{ get; set; }
+}

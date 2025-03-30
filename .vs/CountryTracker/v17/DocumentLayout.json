@@ -1,0 +1,760 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Dev\\TestTopOrder\\TestTopOrder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\pages\\home\\countrycard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\pages\\home\\countrycard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\pages\\home\\regioncard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\pages\\home\\regioncard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.infrastructure\\api\\countriesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|solutionrelative:countrytracker.infrastructure\\api\\countriesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\pages\\details\\details.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\pages\\details\\details.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\pages\\home\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\pages\\home\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\pages\\details\\tripeditmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\pages\\details\\tripeditmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\business\\gettrackedcountriesfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\business\\gettrackedcountriesfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\components\\confirmmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\components\\confirmmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\models\\countrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\models\\countrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\business\\gettripfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\business\\gettripfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\business\\addtripfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\business\\addtripfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\business\\getalltripsfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\business\\getalltripsfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\interfaces\\icountriesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\interfaces\\icountriesapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\business\\deletetripfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\business\\deletetripfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\business\\edittripfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\business\\edittripfeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|solutionrelative:countrytracker.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\interfaces\\iapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\interfaces\\iapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.infrastructure\\database\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|solutionrelative:countrytracker.infrastructure\\database\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\interfaces\\iapplicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\interfaces\\iapplicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.infrastructure\\database\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|solutionrelative:countrytracker.infrastructure\\database\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\helpers\\fakedatahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\helpers\\fakedatahelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\models\\tripmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\models\\tripmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\entities\\trip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker\\countrytracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{350610E7-2FEA-4F8A-BB52-EC9F4E7972DB}|CountryTracker\\CountryTracker.csproj|solutionrelative:countrytracker\\countrytracker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\models\\api\\restcountries\\countrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\models\\api\\restcountries\\countrymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\models\\api\\searchcountriesresultmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\models\\api\\searchcountriesresultmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\models\\api\\restcountries\\countrynamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\models\\api\\restcountries\\countrynamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\models\\api\\restcountries\\countryflagsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\models\\api\\restcountries\\countryflagsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\models\\api\\restcountries\\countrymapsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\models\\api\\restcountries\\countrymapsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.application\\countrytracker.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CD2EBE81-F32E-4A39-8FB7-3605644898C9}|CountryTracker.Application\\CountryTracker.Application.csproj|solutionrelative:countrytracker.application\\countrytracker.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.infrastructure\\countrytracker.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A0778250-4ADF-46A6-8BD3-39805B9A0D25}|CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj|solutionrelative:countrytracker.infrastructure\\countrytracker.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|c:\\dev\\testtoporder\\testtoporder\\countrytracker.core\\countrytracker.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8EB05774-9857-4F75-82EE-561C005FBB0F}|CountryTracker.Core\\CountryTracker.Core.csproj|solutionrelative:countrytracker.core\\countrytracker.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Error.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Error.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Pages\\Error.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Error.razor",
+              "RelativeToolTip": "CountryTracker\\Pages\\Error.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T02:09:44.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Home\\Home.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Pages\\Home\\Home.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Home\\Home.razor",
+              "RelativeToolTip": "CountryTracker\\Pages\\Home\\Home.razor",
+              "ViewState": "AQIAADoAAAAAAAAAAAAswEkAAACPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T02:35:23.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetTrackedCountriesFeature.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\GetTrackedCountriesFeature.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Business\\GetTrackedCountriesFeature.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\GetTrackedCountriesFeature.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Business\\GetTrackedCountriesFeature.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAwwBkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T10:02:56.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConfirmModal.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Components\\ConfirmModal.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Components\\ConfirmModal.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Components\\ConfirmModal.razor",
+              "RelativeToolTip": "CountryTracker\\Components\\ConfirmModal.razor",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T08:06:36.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\wwwroot\\app.css",
+              "RelativeDocumentMoniker": "CountryTracker\\wwwroot\\app.css",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\wwwroot\\app.css",
+              "RelativeToolTip": "CountryTracker\\wwwroot\\app.css",
+              "ViewState": "AQIAAIEAAAAAAAAAAAA0wJAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-30T02:22:40.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Details\\Details.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Pages\\Details\\Details.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Details\\Details.razor",
+              "RelativeToolTip": "CountryTracker\\Pages\\Details\\Details.razor",
+              "ViewState": "AQIAAL0AAAAAtyJoOKnrv8AAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T05:14:00.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "CountryTracker\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwCIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T02:34:43.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CountriesApi.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\Api\\CountriesApi.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Infrastructure\\Api\\CountriesApi.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\Api\\CountriesApi.cs",
+              "RelativeToolTip": "CountryTracker.Infrastructure\\Api\\CountriesApi.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAEwB8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:03:13.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CountryCard.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Home\\CountryCard.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Pages\\Home\\CountryCard.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Home\\CountryCard.razor",
+              "RelativeToolTip": "CountryTracker\\Pages\\Home\\CountryCard.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T14:15:49.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegionCard.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Home\\RegionCard.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Pages\\Home\\RegionCard.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Home\\RegionCard.razor",
+              "RelativeToolTip": "CountryTracker\\Pages\\Home\\RegionCard.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T13:55:49.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "CountryTracker.Application\\DependencyInjection.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAzwBkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:27:29.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetTripFeature.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\GetTripFeature.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Business\\GetTripFeature.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\GetTripFeature.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Business\\GetTripFeature.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA9wBQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T08:45:21.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TripEditModal.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Details\\TripEditModal.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Pages\\Details\\TripEditModal.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Pages\\Details\\TripEditModal.razor",
+              "RelativeToolTip": "CountryTracker\\Pages\\Details\\TripEditModal.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T06:32:05.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CountryModel.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\CountryModel.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Models\\CountryModel.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\CountryModel.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Models\\CountryModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:39:02.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ICountriesApi.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Interfaces\\ICountriesApi.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Interfaces\\ICountriesApi.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Interfaces\\ICountriesApi.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Interfaces\\ICountriesApi.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:00:28.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Program.cs",
+              "RelativeDocumentMoniker": "CountryTracker\\Program.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Program.cs",
+              "RelativeToolTip": "CountryTracker\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T02:03:21.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddTripFeature.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\AddTripFeature.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Business\\AddTripFeature.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\AddTripFeature.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Business\\AddTripFeature.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAIAywC8AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:37:02.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetAllTripsFeature.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\GetAllTripsFeature.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Business\\GetAllTripsFeature.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\GetAllTripsFeature.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Business\\GetAllTripsFeature.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAwwBUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T06:02:41.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DeleteTripFeature.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\DeleteTripFeature.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Business\\DeleteTripFeature.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\DeleteTripFeature.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Business\\DeleteTripFeature.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA1wBQAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:37:47.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "CountryTracker.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:25:04.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EditTripFeature.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\EditTripFeature.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Business\\EditTripFeature.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Business\\EditTripFeature.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Business\\EditTripFeature.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAAACcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:37:38.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\_Imports.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\_Imports.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\_Imports.razor",
+              "RelativeToolTip": "CountryTracker\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T02:18:17.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IApplicationDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Interfaces\\IApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Interfaces\\IApplicationDbContextFactory.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Interfaces\\IApplicationDbContextFactory.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Interfaces\\IApplicationDbContextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwQAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T09:23:34.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApplicationDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\Database\\ApplicationDbContextFactory.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Infrastructure\\Database\\ApplicationDbContextFactory.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\Database\\ApplicationDbContextFactory.cs",
+              "RelativeToolTip": "CountryTracker.Infrastructure\\Database\\ApplicationDbContextFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T09:26:14.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IApplicationContext.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Interfaces\\IApplicationContext.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Interfaces\\IApplicationContext.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Interfaces\\IApplicationContext.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Interfaces\\IApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:49:50.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\Database\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Infrastructure\\Database\\ApplicationContext.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\Database\\ApplicationContext.cs",
+              "RelativeToolTip": "CountryTracker.Infrastructure\\Database\\ApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:55:53.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FakeDataHelper.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Helpers\\FakeDataHelper.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\Helpers\\FakeDataHelper.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\Helpers\\FakeDataHelper.cs",
+              "RelativeToolTip": "CountryTracker.Application\\Helpers\\FakeDataHelper.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAxwCYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:57:14.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TripModel.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\TripModel.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Models\\TripModel.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\TripModel.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Models\\TripModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:38:21.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\appsettings.json",
+              "RelativeDocumentMoniker": "CountryTracker\\appsettings.json",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\appsettings.json",
+              "RelativeToolTip": "CountryTracker\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-30T01:20:39.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\App.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\App.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\App.razor",
+              "RelativeToolTip": "CountryTracker\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T02:10:13.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Trip.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Entities\\Trip.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Entities\\Trip.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Entities\\Trip.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Entities\\Trip.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:34:42.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Constants.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Constants.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Constants.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Constants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T05:15:39.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Routes.razor",
+              "RelativeDocumentMoniker": "CountryTracker\\Routes.razor",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\Routes.razor",
+              "RelativeToolTip": "CountryTracker\\Routes.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-30T02:34:54.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CountryTracker.csproj",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\CountryTracker.csproj",
+              "RelativeDocumentMoniker": "CountryTracker\\CountryTracker.csproj",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\CountryTracker.csproj",
+              "RelativeToolTip": "CountryTracker\\CountryTracker.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-30T02:08:41.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "favicon.ico - Icon [16x16, 32\u00A0bits, BMP]",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\wwwroot\\favicon.ico",
+              "RelativeDocumentMoniker": "CountryTracker\\wwwroot\\favicon.ico",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker\\wwwroot\\favicon.ico - Icon [16x16, 32\u00A0bits, BMP]",
+              "RelativeToolTip": "CountryTracker\\wwwroot\\favicon.ico - Icon [16x16, 32\u00A0bits, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-03-30T04:55:22.525Z",
+              "EditorCaption": " - Icon [16x16, 32\u00A0bits, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SearchCountriesResultModel.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\SearchCountriesResultModel.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Models\\Api\\SearchCountriesResultModel.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\SearchCountriesResultModel.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Models\\Api\\SearchCountriesResultModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:02:14.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Country.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Entities\\Country.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Entities\\Country.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Entities\\Country.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Entities\\Country.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvwkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T00:42:18.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CountryModel.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\RestCountries\\CountryModel.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Models\\Api\\RestCountries\\CountryModel.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\RestCountries\\CountryModel.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Models\\Api\\RestCountries\\CountryModel.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwA0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:06:08.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CountryNameModel.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\RestCountries\\CountryNameModel.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Models\\Api\\RestCountries\\CountryNameModel.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\RestCountries\\CountryNameModel.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Models\\Api\\RestCountries\\CountryNameModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:06:29.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CountryFlagsModel.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\RestCountries\\CountryFlagsModel.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Models\\Api\\RestCountries\\CountryFlagsModel.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\RestCountries\\CountryFlagsModel.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Models\\Api\\RestCountries\\CountryFlagsModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:11:34.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CountryMapsModel.cs",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\RestCountries\\CountryMapsModel.cs",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\Models\\Api\\RestCountries\\CountryMapsModel.cs",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\Models\\Api\\RestCountries\\CountryMapsModel.cs",
+              "RelativeToolTip": "CountryTracker.Core\\Models\\Api\\RestCountries\\CountryMapsModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T01:10:02.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CountryTracker.Application.csproj",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\CountryTracker.Application.csproj",
+              "RelativeDocumentMoniker": "CountryTracker.Application\\CountryTracker.Application.csproj",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Application\\CountryTracker.Application.csproj",
+              "RelativeToolTip": "CountryTracker.Application\\CountryTracker.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-30T00:26:43.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CountryTracker.Core.csproj",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\CountryTracker.Core.csproj",
+              "RelativeDocumentMoniker": "CountryTracker.Core\\CountryTracker.Core.csproj",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Core\\CountryTracker.Core.csproj",
+              "RelativeToolTip": "CountryTracker.Core\\CountryTracker.Core.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-30T00:26:18.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CountryTracker.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj",
+              "ToolTip": "C:\\Dev\\TestTopOrder\\TestTopOrder\\CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj",
+              "RelativeToolTip": "CountryTracker.Infrastructure\\CountryTracker.Infrastructure.csproj",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-30T00:25:23.568Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

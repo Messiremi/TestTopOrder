@@ -1,0 +1,255 @@
+:root {
+	--color-primary: #808000;
+	--color-secondary: #FFA500;
+	--color-bg: rgba(107, 107, 0, 1);
+	--color-bg-transparent: rgba(107, 107, 0, 0.6);
+	--bg-white: rgba(255,255,255,0.9);
+}
+
+/*========== LAYOUT ===========*/
+body {
+	margin: 0;
+	font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+	background: linear-gradient(to bottom, var(--color-secondary), var(--color-primary));
+}
+
+.mud-layout {
+	display: flex;
+	flex-direction: column;
+}
+
+/*========== LAYOUT  - HEADER ===========*/
+.header {
+	background: var(--bg-white);
+	display: flex;
+	flex-direction: row;
+	height: 6em;
+	margin: 1em;
+	border-radius: 6px;
+}
+
+.header-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header-title-logo {
+	color: var(--color-primary);
+}
+
+	.header-title-logo .icon-earth {
+		color: var(--color-primary);
+	}
+
+	.header-title-logo .icon-plane {
+		margin-left: 0.7em;
+		transform: rotate(-20deg);
+		margin-top: 0.2em;
+		color: var(--color-secondary);
+	}
+
+.header-title-text {
+	color: var(--color-primary);
+	font-size: 1.6em;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.mud-navmenu.mud-navmenu-default .mud-nav-link.active:not(.mud-nav-link-disabled) {
+	color: unset;
+	background-color: unset;
+}
+
+.header-navigation,
+.mud-navmenu {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+	.header-navigation .mud-navmenu .mud-nav-item {
+		margin: 1em;
+		width: unset;
+	}
+
+	.header-navigation .mud-nav-link {
+		color: var(--color-primary) !important;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1.3em;
+		width: unset;
+		padding: 0;
+	}
+
+		.header-navigation .mud-nav-link:hover {
+			color: var(--color-bg);
+			text-shadow: 0em 0em 0.3em var(--color-bg-transparent)
+		}
+
+		.header-navigation .mud-nav-link.active .mud-nav-link-text {
+			font-weight: bold;
+		}
+
+.mud-nav-link .mud-nav-link-text {
+	margin-left: 0 !important;
+	margin-inline-start: 0 !important;
+}
+/*========== LAYOUT  - CONTENT ===========*/
+.mud-main-content {
+	padding-top: 0 !important;
+}
+
+	.mud-main-content > div {
+		background: var(--bg-white);
+		border-radius: 6px;
+		min-height: calc(100vh - 12em);
+		margin-left: 1em;
+		margin-right: 1em;
+		margin-bottom: 1em;
+		padding: 0.5em;
+	}
+
+.mud-container {
+	width: unset;
+}
+
+/*========== LAYOUT  - FOOTER ===========*/
+.footer {
+	background: var(--color-bg);
+	height: 4em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+/*========== BASE ===========*/
+h1 {
+	outline: none;
+	margin: 0;
+	color: var(--color-primary);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+h2 {
+	outline: none;
+	margin: 0;
+	color: var(--color-secondary);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.6em;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.img-fluid {
+	height: auto;
+}
+
+.img-icon {
+	width: 32px;
+}
+
+.mx-2 {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+
+
+/*========== MUD OVERRIDE ===========*/
+.mud-primary-text,
+.mud-button-text.mud-button-text-primary,
+.mud-button-outlined.mud-button-outlined-primary {
+	color: var(--color-primary) !important;
+}
+
+.mud-button-outlined.mud-button-outlined-primary {
+	border: 1px solid var(--color-primary) !important;
+}
+
+.mud-button-filled.mud-button-filled-primary {
+	background: var(--color-primary) !important;
+}
+
+.mud-secondary-text,
+.mud-button-text.mud-button-text-secondary,
+.mud-button-outlined.mud-button-outlined-secondary {
+	color: var(--color-secondary) !important;
+}
+
+.mud-button-outlined.mud-button-outlined-secondary {
+	border: 1px solid var(--color-secondary) !important;
+}
+
+.mud-button-filled.mud-button-filled-secondary {
+	background: var(--color-secondary) !important;
+}
+
+.mud-dialog-title {
+	background: var(--color-primary);
+	color: white;
+	padding: 0.5em !important;
+}
+
+.mud-input.mud-input-underline:after {
+	border-bottom: 2px solid var(--color-primary);
+}
+
+.mud-input:focus-within ~ label.mud-input-label.mud-input-label-inputcontrol {
+	color: var(--color-primary);
+}
+
+.mud-button {
+	min-width: unset;
+}
+
+.mud-progress-circular {
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+
+.mud-card-header {
+	background: var(--color-primary);
+	color: white;
+	padding: 0.5em;
+}
+
+.mud-card-content {
+	height: 12em;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important
+}
+
+	.mud-card-content > p {
+		font-size: 4em;
+		color: var(--color-primary);
+		text-shadow: 0px 1px 2px white;
+	}
+
+.mud-card-actions {
+	justify-content: center;
+	padding: 0;
+}
